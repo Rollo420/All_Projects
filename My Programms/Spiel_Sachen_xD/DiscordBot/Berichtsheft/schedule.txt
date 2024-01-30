@@ -1,0 +1,28 @@
+Mittwoch 17.01.2024: <discord.ext.commands.context.Context object at 0x000001832A80D850>
+
+Mittwoch 17.01.2024: test01
+
+Mittwoch 17.01.2024: test02
+
+Mittwoch 17.01.2024: test01
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: lol oder so
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: lol
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: lol2
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: lol3
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: lol1
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: nix
+Dies ist der aktualisierte Text.
+Mittwoch 17.01.2024: test01
+
+Mittwoch 17.01.2024: test01
+
+Mittwoch 17.01.2024: test
+
+Mittwoch 17.01.2024: test02
+

@@ -1,0 +1,30 @@
+Montag:
+            1.-2. Stunde: LF05 Übungsaufgaben alle Themen SQL
+             3.-4. Stunde: LF02 Normalformen, Datenbanken
+             5.-6. Stunde: LF02 Aufgaben HDD/SSD vergleichen
+             7.-8. Stunde: LF02 Normalformen, Datenbanken
+Dienstag:
+            3.-4. Stunde: LF05 SQL Übungsaufgaben von Montag besprochen
+            5.-6. Stunde: LF05 ASCII Übungsaufgaben
+Mittwoch:
+            1.-2. Stunde: LF04 Schutzziele nach BSI und DSGVO
+            3.-4. Stunde: LF05 Übungsaufgaben Speichereinheiten
+            5.-6. Stunde: LF01 Klausur
+Donnerstag:
+            1.-2. Stunde: LF01 Unternehmensorganisation
+            3.-4. Stunde: LF05 Übungsaufgaben mit SQLite-Studio
+Freitag:
+           1.-2. Stunde: Politik Jugendarbeitsschutzgesetz
+           3.-4. Stunde: LF01 Organigram
+           5.-6. Stunde: LF04 Klausur
+
+
+Montag: Python ChatBot, Schiffe Versenken programmiert
+
+Dienstag: Einführung in JavaScript mit Udemy und einschulung in die Berufsschule
+
+Mittwoch: weitere grundlagen in JavaScript: Array, Operatoren und  String to Integer
+
+Donnerstag: Grundlagen in JavaScript: if-Anwendungen, while-Schleifen 
+
+Freitag: Grundlagen in JavaScript zu  For-Schleifen

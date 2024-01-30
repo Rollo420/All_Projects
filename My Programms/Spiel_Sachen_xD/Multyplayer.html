@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Multiplayer Game</title>
+</head>
+<body>
+  <canvas id="gameCanvas" width="1080" height="1920"></canvas>
+
+  <script>
+    // WebSocket connection
+    const socket = new WebSocket('ws://127.0.0.1:5500');
+
+    // Canvas context
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Player data
+    let playerId = null;
+    let players = {};
+    let x = 0;
+    let y = 0;
+    let weapon = 'pistol';
+
+    // Handle movement input
+    document.addEventListener('keydown', event => {
+      if (event.key === 'ArrowUp') {
+        y -= 10;
+      } else if (event.key === 'ArrowDown') {
+        y += 10;
+      } else if (event.key === 'ArrowLeft') {
+        x -= 10;
+      } else if (event.key === 'ArrowRight') {
+        x += 10;
+      }
+      // Send updated player position to server
+      socket.send(JSON.stringify({
+        type: 'move',
+        x,
+        y
+      }));
+    });
+
+    // Handle weapon switching
+    document.addEventListener('keypress', event => {
+      if (event.key === '1') {
+        weapon = 'pistol';
+      } else if (event.key === '2') {
+        weapon = 'shotgun';
+      } else if (event.key === '3') {
+        weapon = 'rifle';
+      }
+      // Send updated weapon to server
+      socket.send(JSON.stringify({
+        type: 'switch_weapon',
+        weapon
+      }));
+    });
+
+    // Handle shooting
+    canvas.addEventListener('click', event => {
+      // Send shooting event to server
+      socket.send(JSON.stringify({
+        type: 'shoot',
+        x,
+        y,
+        weapon
+      }));
+    });
+
+    // Handle incoming events from server
+    socket.onmessage = event => {
+      const data = JSON.parse(event.data);
+      if (data.type === 'update') {
+        // Update player positions
+        players = data.players;
+      } else if (data.type === 'hit') {
+        // Handle player getting hit
+      } else if (data.type === 'player_id') {
+        // Set player id
+        playerId = data.playerId;
+      }
+    };
+
+    // Render game
+    function render() {
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+      // Draw players
+      for (const id in players) {
+        const player = players[id];
+        ctx.fillRect(player.x, player.y, 10, 10);
+      }
+
+      // Draw crosshair
+      ctx.beginPath();
+      ctx.moveTo(x - 5, y);
+      ctx.lineTo(x + 5, y);
+      ctx.moveTo(x, y - 5);
+      ctx.lineTo(x, y + 5);
+      ctx.stroke();
+
+      // Request next frame
+      requestAnimationFrame(render);
+    }
+
+    // Start rendering loop
+    render();
+  </script>
+</body>
+</html>

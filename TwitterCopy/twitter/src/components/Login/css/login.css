@@ -1,0 +1,106 @@
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+.main 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#009113,#00650e );
+}
+.wrapperr
+{
+  position: flex;
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  background: linear-gradient(135deg,#7b4397,#dc2430 );
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+.signin .content h2 
+{
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+.signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 20px 10px 10.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 570;
+  font-size: 1em;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: #0f0;
+  font-weight: 700;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: linear-gradient(135deg,#00a316,#008312 );
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  border-radius: 7px;
+}
+input[type="submit"]:active
+{
+  transform: scale3d(1.2,1.2,1.2);
+}

@@ -1,0 +1,12 @@
+[9/25/2023, 1:35:41 PM] info: Logging was started
+[9/25/2023, 1:35:41 PM] info: Start application inspector initialization
+[9/25/2023, 1:35:41 PM] info: Hide developer mode UI
+[9/25/2023, 1:35:41 PM] info: Infrastructure Configurations: {"d2i_1":8000,"e2i_1":"C:\\Users\\javoß\\AppData\\Local\\Application Inspector Analyzer","f2i_1":"C:\\Users\\javoß\\AppData\\Local\\Application Inspector Analyzer","g2i_1":"c:\\Projekte\\Schulungen\\python-schulung\\Assistent\\AI","h2i_1":false,"i2i_1":{"v4_1":"Error","w4_1":5,"l30_1":5},"j2i_1":"c:\\Projekte\\Schulungen\\python-schulung\\Assistent\\AI\\.ai\\Logs\\Infrastructure\\2023-09-25-13-35-41","k2i_1":"c:\\Projekte\\Schulungen\\python-schulung\\Assistent\\AI\\.ai"}
+[9/25/2023, 1:35:41 PM] info: Start infrastructure initialization
+[9/25/2023, 1:35:42 PM] info: Infrastructure was started
+[9/25/2023, 1:35:45 PM] info: Initialize aie integration isn't initialized
+[9/25/2023, 1:35:45 PM] info: Infrastructure was initialized
+[9/25/2023, 1:35:45 PM] info: Infrastructure Installer was deleted
+[9/25/2023, 1:35:47 PM] info: Clean up logs files was started
+[9/25/2023, 1:35:47 PM] info: Clean up logs files was finished
+[9/25/2023, 1:35:48 PM] info: Project was created. Id: 9bd8a199-0e1b-4715-b755-bedf5357c118
