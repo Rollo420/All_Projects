@@ -4,7 +4,7 @@ from discord.ui import View, Button, button
 from itertools import combinations
 import os
 
-TOKEN = 'MTE3OTg5NjU1ODEwMDE2MDYzMg.GpBQO8.xgptk94MAB0jK2pxZLNzmD0oIvM4s3zofc3YlY'
+TOKEN = 'Bot_Token'
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)

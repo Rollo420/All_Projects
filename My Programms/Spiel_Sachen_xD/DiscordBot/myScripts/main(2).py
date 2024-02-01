@@ -9,7 +9,7 @@ import comm
 from bot_gess_the_num import gess_the_num as gtn
 from bot_TicTacToe import TicTacToeBoard
 
-TOKEN = "MTE0MjAxMzY3MTQ2NDI1MTQyNg.GOnGQD.L6s7bsZatl1DC0Aa_TtO9q7cH4WaS6nQ7TkKKg"
+TOKEN = "Bot_Token"
 intents = discord.Intents.all()
 
 bot = commands.Bot(command_prefix='!', intents=intents)

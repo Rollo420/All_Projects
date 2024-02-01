@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-TOKEN = 'MTE3OTg5NjU1ODEwMDE2MDYzMg.GpBQO8.xgptk94MAB0jK2pxZLNzmD0oIvM4s3zofc3YlY'
+TOKEN = 'Bot_Token'
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
@@ -52,8 +52,8 @@ class Control():
     def __init__(self, headless=True):
 
         # Variablen
-        self.username = '0000767083'
-        self.password = '909090123jJ!!'
+        self.username = ''
+        self.password = ''
         self.page     = 'https://www.instagram.com/'
         self.file_path = r'G:\My Programms\Spiel_Sachen_xD\DiscordBot\schedule.txt'
 
